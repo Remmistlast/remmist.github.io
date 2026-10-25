@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remmist Website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #080c14;
+            font-family: Arial, sans-serif;
+            color: white;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            padding: 40px;
+            border: 1px solid #00aaff55;
+            border-radius: 20px;
+            background: #101827;
+            box-shadow: 0 0 35px #0077ff22;
+            animation: appear 1.2s ease;
+        }
+
+        h1 {
+            font-size: clamp(28px, 6vw, 48px);
+            color: #35baff;
+            text-shadow: 0 0 20px #008cff88;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 17px;
+            color: #aabbd0;
+            letter-spacing: 2px;
+        }
+
+        .line {
+            width: 80px;
+            height: 3px;
+            background: #35baff;
+            margin: 25px auto 0;
+            border-radius: 10px;
+            box-shadow: 0 0 12px #35baff;
+        }
+
+        @keyframes appear {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Web này là của Remmist</h1>
+        <p>WELCOME TO MY WEBSITE</p>
+        <div class="line"></div>
+    </div>
+</body>
+</html>
